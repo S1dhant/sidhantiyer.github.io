@@ -2,41 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Sidhant Iyer | Data Scientist Portfolio">
-  <title>Sidhant Iyer | Data Scientist</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Montserrat&family=Kaushan+Script&family=Droid+Serif&display=swap" rel="stylesheet">
-  
-  <!-- Custom CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidhant Iyer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Navigation -->
-  <nav id="mainNav">
-    <div class="container">
-      <a href="#top" class="brand">Sidhant Iyer</a>
-    </div>
-  </nav>
-
-  <!-- Hero / Masthead -->
-  <header class="masthead">
-    <div class="container center">
-      <h1 class="title">I'm Sidhant Iyer</h1>
-      <p class="subtitle">Data Scientist | Analyst | Explorer</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
+  <header class="site-header">
+    <h1>Sidhant Iyer</h1>
+    <p>Data Scientist | Analyst | AI Engineer</p>
   </header>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <p class="text-muted">Coming soon: Data-driven case studies, visualizations, and blog posts.</p>
-    </div>
-  </section>
+  <nav class="navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I'm a data scientist with a passion for solving real-world problems using data, machine learning, and AI. I build interpretable, scalable solutions and love working on impactful projects.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Movie Recommendation System</h3>
+        <p>
+          Built using PyTorch Geometric and the MovieLens dataset. Predicted user-item interactions with GNN models.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Medical Chatbot</h3>
+        <p>
+          Developed a RAG-based chatbot for GlobalMedics.ai using Azure services to deliver medically relevant answers.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Python, R</li>
+        <li>Machine Learning, Deep Learning</li>
+        <li>PyTorch, scikit-learn, pandas, SQL</li>
+        <li>Azure, Git, APIs</li>
+        <li>Data Visualization (Matplotlib, Seaborn, Plotly)</li>
+      </ul>
+    </section>
+
+    <section id="resume" class="section">
+      <h2>Resume</h2>
+      <p>
+        <a href="resume.pdf" target="_blank">Download my resume</a>
+      </p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: your.email@example.com</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/s1dhant" target="_blank">github.com/s1dhant</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Sidhant Iyer</p>
+  </footer>
 </body>
 </html>

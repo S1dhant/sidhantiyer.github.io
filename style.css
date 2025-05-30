@@ -1,86 +1,102 @@
-/* Fonts */
+/* Base styles */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #333333;
-  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 a {
+  color: #1a73e8;
   text-decoration: none;
-  color: inherit;
 }
 
-/* Navbar */
-#mainNav {
-  background-color: #222;
-  padding: 20px;
+a:hover {
+  text-decoration: underline;
 }
 
-#mainNav .brand {
-  color: #f05f40;
-  font-family: 'Kaushan Script', cursive;
-  font-size: 24px;
-}
-
-/* Masthead */
-.masthead {
-  background: linear-gradient(120deg, #f05f40, #f28e60);
-  color: white;
+/* Header */
+.site-header {
+  background-color: #ffffff;
+  padding: 2rem;
   text-align: center;
-  padding: 160px 20px 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.title {
-  font-size: 48px;
-  font-family: 'Roboto Slab', serif;
+.site-header h1 {
   margin: 0;
+  font-size: 2.5rem;
 }
 
-.subtitle {
-  font-size: 24px;
-  font-family: 'Droid Serif', serif;
-  margin: 20px 0;
+.site-header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+  color: #666;
 }
 
-/* Button */
-.btn {
-  background-color: #f05f40;
-  color: white;
-  padding: 12px 30px;
-  border-radius: 4px;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+/* Navigation */
+.navigation {
+  background-color: #1a73e8;
+  padding: 1rem 0;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  margin: 0 1rem;
+}
+
+.navigation a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project {
+  margin-bottom: 1.5rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background-color: #e8f0fe;
   display: inline-block;
-  margin-top: 20px;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
 }
 
-.btn:hover {
-  background-color: #ee4b28;
-}
-
-/* Sections */
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.center {
+/* Footer */
+.site-footer {
+  background-color: #f1f1f1;
   text-align: center;
-}
-
-.section-title {
-  font-size: 32px;
-  font-family: 'Roboto Slab', serif;
-  margin-bottom: 20px;
-}
-
-.text-muted {
-  color: #888;
-  font-size: 16px;
-  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #777;
 }
