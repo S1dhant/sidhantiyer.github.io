@@ -2,45 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sidhant Iyer | Data Scientist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidhant Iyer - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Sidhant Iyer</h1>
-    <p>Data Scientist | AI Engineer | Analyst</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="assets/profile.jpg" alt="Sidhant Iyer" class="profile-pic" />
+      <h1>Sidhant Iyer</h1>
+      <p>Data Scientist | Analyst | AI Engineer</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a data scientist passionate about building impactful solutions using machine learning and AI. I enjoy turning complex data into actionable insights.</p>
-  </section>
+    <main class="content">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I'm a data scientist with a passion for solving real-world problems using data,
+          machine learning, and AI. I build interpretable, scalable solutions and love working
+          on impactful projects.
+        </p>
+      </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Movie Recommender System</h3>
-      <p>Built using PyTorch Geometric and the MovieLens dataset. Improved precision by 12% using GNN techniques.</p>
-      <a href="https://github.com/YOURUSERNAME/YOURPROJECT">View on GitHub</a>
-    </div>
-    <!-- Add more projects here -->
-  </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <img src="https://via.placeholder.com/300x200" alt="Project 1" />
+          <div>
+            <h3>Movie Recommendation System</h3>
+            <p>Built using PyTorch Geometric and the MovieLens dataset. Predicted user-item interactions with GNN models.</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/300x200" alt="Project 2" />
+          <div>
+            <h3>Medical Chatbot</h3>
+            <p>Developed a RAG-based chatbot for GlobalMedics.ai using Azure services to deliver medically relevant answers.</p>
+          </div>
+        </div>
+      </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-    <p><a href="https://linkedin.com/in/YOURPROFILE">LinkedIn</a></p>
-    <p><a href="https://github.com/YOURUSERNAME">GitHub</a></p>
-  </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Python, R</li>
+          <li>Machine Learning, Deep Learning</li>
+          <li>PyTorch, scikit-learn, pandas, SQL</li>
+          <li>Azure, Git, APIs</li>
+          <li>Data Visualization (Matplotlib, Seaborn, Plotly)</li>
+        </ul>
+      </section>
 
-  <footer>
-    <p>© 2025 Sidhant Iyer</p>
-  </footer>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        <p>GitHub: <a href="https://github.com/s1dhant" target="_blank">github.com/s1dhant</a></p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
