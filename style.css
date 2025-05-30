@@ -100,3 +100,63 @@ main {
   font-size: 0.9rem;
   color: #777;
 }
+
+
+/* === HERO SECTION === */
+.hero {
+  background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #cfd8dc;
+  margin-bottom: 1.5rem;
+}
+
+.hero-tagline {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #e3f2fd;
+}
+
+.hero-btn {
+  background-color: white;
+  color: #1a73e8;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #e3f2fd;
+  color: #0b59d9;
+}
+
+/* Highlight text color */
+.highlight {
+  color: #ffd54f;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
