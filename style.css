@@ -430,3 +430,78 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+/* === HERO TITLE HIGHLIGHT === */
+.hero-title span {
+  color: #f05f40;
+  font-weight: bold;
+}
+
+/* === PROJECT TITLE HOVER === */
+.project h3:hover {
+  color: #1a73e8;
+  transition: 0.3s ease;
+}
+
+/* === RESUME BUTTON === */
+.resume-button {
+  background: #1a73e8;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.resume-button:hover {
+  background: #0b59d9;
+}
+
+/* === DARK MODE === */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .section {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .hero-title span {
+  color: #ffab40;
+}
+
+.dark-mode a {
+  color: #90caf9;
+}
+
+.dark-mode .resume-button {
+  background-color: #bb86fc;
+  color: #000;
+}
+
+.dark-mode .resume-button:hover {
+  background-color: #985eff;
+}
+
+/* === DARK MODE TOGGLE BUTTON === */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #f05f40;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.dark-mode .dark-mode-toggle {
+  background: #90caf9;
+  color: #000;
+}
