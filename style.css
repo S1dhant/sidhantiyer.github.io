@@ -459,31 +459,53 @@ footer p {
   background: #0b59d9;
 }
 
-/* === DARK MODE === */
+/* === CHATGPT-INSPIRED DARK MODE === */
 body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #343541;
+  color: #d1d5db;
+}
+
+.dark-mode p,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode a,
+.dark-mode .experience-sub-title,
+.dark-mode .project-title {
+  color: #d1d5db;
 }
 
 .dark-mode .section {
-  background-color: #1e1e1e;
+  background-color: #343541;
 }
 
-.dark-mode .hero-title span {
-  color: #ffab40;
+.dark-mode a:hover {
+  color: #10a37f;
 }
 
-.dark-mode a {
-  color: #90caf9;
+.dark-mode .btn,
+.dark-mode .btn-color-1,
+.dark-mode .btn-color-2 {
+  background-color: #10a37f;
+  color: #fff;
+  border: none;
+}
+
+.dark-mode .btn:hover,
+.dark-mode .btn-color-1:hover,
+.dark-mode .btn-color-2:hover {
+  background-color: #0e8c6f;
+  color: white;
 }
 
 .dark-mode .resume-button {
-  background-color: #bb86fc;
-  color: #000;
+  background-color: #10a37f;
+  color: white;
+  border: none;
 }
 
 .dark-mode .resume-button:hover {
-  background-color: #985eff;
+  background-color: #0e8c6f;
 }
 
 /* === DARK MODE TOGGLE BUTTON === */
@@ -491,7 +513,7 @@ body.dark-mode {
   position: fixed;
   top: 20px;
   right: 20px;
-  background: #f05f40;
+  background: #10a37f;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -502,6 +524,6 @@ body.dark-mode {
 }
 
 .dark-mode .dark-mode-toggle {
-  background: #90caf9;
-  color: #000;
+  background: #d1d5db;
+  color: #343541;
 }
