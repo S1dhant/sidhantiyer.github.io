@@ -9,6 +9,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 }
 
 html {
@@ -445,19 +448,29 @@ footer p {
 }
 
 /* === RESUME BUTTON === */
+
 .resume-button {
-  background: #1a73e8;
+  background-color: #10a37f;
   color: white;
   padding: 10px 25px;
   border-radius: 30px;
   font-weight: bold;
   display: inline-block;
   text-decoration: none;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
 .resume-button:hover {
-  background: #0b59d9;
+  background-color: #0e8c6f;
 }
+
+/* Adjust spacing */
+.btn-container .resume-button {
+  margin-top: 1rem;
+}
+
+
 
 /* === CHATGPT-INSPIRED DARK MODE === */
 body.dark-mode {

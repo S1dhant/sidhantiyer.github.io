@@ -9,6 +9,19 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- Leaflet CSS & JS -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-o0U0zvQTnHNd3lBfFgKURJWx6k+LTezC8D+AdcBBg5w="
+  crossorigin=""
+/>
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-o9N1j2cwnKJZcT4gI1W3Rx1g0TZB0tKJr8B5LZ56GgA="
+  crossorigin=""
+></script>
+
   </head>
   <body>
     <button class="dark-mode-toggle" onclick="toggleDarkMode()">☀️ Light Mode</button>
@@ -94,7 +107,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>1+ years <br />Data Science and Gen AI</p>
             </div>
             <div class="details-container">
               <img
@@ -119,6 +132,48 @@
         class="icon arrow"
         onclick="location.href='./#experience'"
       />
+
+    <section id="career-timeline">
+  <div class="row hide-if-small-screen" style="padding-top: 5%">
+    <div class="col-lg-12 text-center">
+      <svg width="1000" height="100">
+        <!-- timeline line -->
+        <line x1="0" y1="50" x2="1000" y2="50" style="stroke:#10a37f; stroke-width:2" />
+
+        <!-- 2015–2019 -->
+        <circle cx="100" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#10a37f" />
+        <text x="100" y="80" text-anchor="middle" fill="#d1d5db">2015–2019</text>
+        <text x="100" y="30" text-anchor="middle" font-size="13" fill="#d1d5db">B.Tech (IT)</text>
+        <text x="100" y="95" text-anchor="middle" font-size="12" fill="#aaa">Bachelor</text>
+
+        <!-- 2020–2021 -->
+        <circle cx="300" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#10a37f" />
+        <text x="300" y="80" text-anchor="middle" fill="#d1d5db">2020–2021</text>
+        <text x="300" y="30" text-anchor="middle" font-size="13" fill="#d1d5db">MIS Intern</text>
+        <text x="300" y="95" text-anchor="middle" font-size="12" fill="#aaa">HFIL</text>
+
+        <!-- 2022–2024 -->
+        <circle cx="500" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#10a37f" />
+        <text x="500" y="80" text-anchor="middle" fill="#d1d5db">2022–2024</text>
+        <text x="500" y="30" text-anchor="middle" font-size="13" fill="#d1d5db">MDS</text>
+        <text x="500" y="95" text-anchor="middle" font-size="12" fill="#aaa">Macquarie Uni</text>
+
+        <!-- 2022–2023 -->
+        <circle cx="700" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#10a37f" />
+        <text x="700" y="80" text-anchor="middle" fill="#d1d5db">2022–2023</text>
+        <text x="700" y="30" text-anchor="middle" font-size="13" fill="#d1d5db">Volunteer DS</text>
+        <text x="700" y="95" text-anchor="middle" font-size="12" fill="#aaa">Wesley Mission</text>
+
+        <!-- 2024 -->
+        <circle cx="900" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#10a37f" />
+        <text x="900" y="80" text-anchor="middle" fill="#d1d5db">2024</text>
+        <text x="900" y="30" text-anchor="middle" font-size="13" fill="#d1d5db">GenAI Intern</text>
+        <text x="900" y="95" text-anchor="middle" font-size="12" fill="#aaa">Global Medics</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
     </section>
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
@@ -267,7 +322,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Medical Chatbot using RAG Technologies</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -291,7 +346,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">>Smart Gloves – Goal Detection in Football</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -315,7 +370,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Sentiment Analysis of WhatsApp Chat Data</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -362,6 +417,31 @@
         </div>
       </div>
     </section>
+
+<!-- ======================== MAP SECTION ============================ -->
+<style>
+  #map {
+    height: 300px;
+    width: 100%;
+    background-color: grey;
+    opacity: 1;
+  }
+</style>
+<div id="map"></div>
+<script>
+  var mymap = L.map('map').setView([-33.8688, 151.2093], 5);
+  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoiaG9sdHp5YW4iLCJhIjoiY2tmczBrd3BrMGJodDJ0bXQ5aW9sZXJ6eCJ9.8zTEkfZ54u4TvDGNjNh-Cg'
+  }).addTo(mymap);
+  var marker = L.marker([-33.8688, 151.2093]).addTo(mymap);
+</script>
+
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -377,18 +457,6 @@
     </footer>
     <script src="script.js"></script>
   
-<div class="project">
-  <h3>Medical RAG Chatbot (GlobalMedics.AI)</h3>
-  <p>Developed a chatbot that summarizes research papers using Azure OpenAI and Cognitive Search.</p>
-</div>
-<div class="project">
-  <h3>Smart Gloves – Goal Detection in Football</h3>
-  <p>Built a sensor-integrated ML model to detect goals in football using glove data.</p>
-</div>
-<div class="project">
-  <h3>Sentiment Analysis of WhatsApp Chat Data</h3>
-  <p>Used R and NLP techniques to extract insights from personal conversations.</p>
-</div>
 
 </body>
 </html>
